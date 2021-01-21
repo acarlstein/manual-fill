@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Manual Fill",
+  "short_name": "ManualFill",
+  "description": "A simple chrome extension which allows the user to save selected text for later use.",
+  "version": "0.1.0.0",
+  "minimum_chrome_version": "38",
+  "permissions": [
+    "activeTab",
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus", 
+    "tabs",    
+    "storage"
+  ],
+  "icons": {
+    "16": "assets/manualfill16x16.png",
+    "32": "assets/manualfill32x32.png",
+    "48": "assets/manualfill48x48.png",
+    "128": "assets/manualfill128x128.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "run_at" : "document_idle",
+    "matches": ["<all_urls>"],
+    "js": ["dialog.js"]
+  }]
+}

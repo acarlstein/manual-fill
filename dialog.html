@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manual Fill: Manage Values</title>
+    <style>
+      select, option {
+        width: 220px;
+      }
+      #buttons, h2, form {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2>Manage Values</h2>
+      <input type="text" name="newValue" />
+      <input type=button id="btnAdd" name="btnAdd" value="Add">
+      <br/>
+      <select name="wordList" id="wordList" multiple>
+      </select>
+      <br/><br/>
+      <div id="buttons">
+        <input type="button" id="btnRemove" name="btnRemove" value="Remove">
+        <input type="submit" value="Save">
+        <input type="button" id="btnCancel" name="btnCancel" value="Cancel">
+      </div>
+    </form>
+    <script src="dialog.js"></script>
+  </body>
+</html>
