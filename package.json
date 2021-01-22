@@ -14,7 +14,8 @@
     "copy",
     "paste",
     "values",
-    "fill"
+    "fill",
+    "manual"
   ],
   "author": "Alejandro G. Carlstein Ramos Mejia",
   "license": "MIT",
