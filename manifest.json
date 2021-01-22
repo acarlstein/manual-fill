@@ -20,12 +20,12 @@
     "128": "assets/manualfill128x128.png"
   },
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["src/background.js"],
     "persistent": false
   },
   "content_scripts": [{
     "run_at" : "document_idle",
     "matches": ["<all_urls>"],
-    "js": ["dialog.js"]
+    "js": ["src/dialog.js"]
   }]
 }
