@@ -59,10 +59,12 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 function storeSelection(selectionText){
   chrome.storage.sync.get(["words"], function(loaded){    
     if (loaded !== undefined && loaded.hasOwnProperty('words')){
-      loaded.words.push(selectionText);  
-      chrome.storage.sync.set({"words" : loaded.words}, function(){
-        createContextMenus();
-      });  
+      if (!loaded.words.includes(selectionText)){
+        loaded.words.push(selectionText);  
+        chrome.storage.sync.set({"words" : loaded.words}, function(){
+          createContextMenus();
+        });    
+      }
     }
   }); 
 }

@@ -3,7 +3,7 @@
   "name": "Manual Fill",
   "short_name": "ManualFill",
   "description": "A simple chrome extension which allows the user to save selected text for later use.",
-  "version": "0.1.0.0",
+  "version": "0.1.0.2",
   "minimum_chrome_version": "38",
   "permissions": [
     "activeTab",
