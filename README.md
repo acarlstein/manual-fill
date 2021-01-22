@@ -6,7 +6,7 @@ A simple chrome extension which allows the user to save selected text for later 
 
 Currently, there is only one way to access this chrome extension, by downloading the code and incorporate it into Google Chrome. The following are the steps to do that.
 
-1. Download this code
+1. Download this code.
   * If you download it as a zip file, you must uncompress it.
 2. Open Google Chrome.
  * On the far right, there are three vertical dots. Click on them.

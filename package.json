@@ -1,0 +1,28 @@
+{
+  "name": "manual-fill",
+  "version": "1.0.0",
+  "description": "A simple chrome extension which allows the user to save selected text for later use.",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acarlstein/manual-fill.git"
+  },
+  "keywords": [
+    "copy",
+    "paste",
+    "values",
+    "fill"
+  ],
+  "author": "Alejandro G. Carlstein Ramos Mejia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acarlstein/manual-fill/issues"
+  },
+  "homepage": "https://github.com/acarlstein/manual-fill#readme",
+  "devDependencies": {
+    "sinon-chrome": "^3.0.1"
+  }
+}
